@@ -16,25 +16,9 @@ body {
     margin: 30px;
 }
 
-/* .flex-container {
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-    /* justify-content: space-between; 
-} */
-
-
-
-nav {
-    /* justify-content: flex-end; */
-    padding-bottom: 3em;
-}
 
 nav a {
     display: flex;
-    /* padding: 0px; */
-    /* padding-left: .75em;
-    padding-right: .75em; */
     text-decoration: none;
     color: #444;
 }
@@ -53,7 +37,7 @@ h1.title {
     font-weight: 500;
 }
 
-h3.logo {
+h3.flex-logo {
     text-align: left;
     display: inline-block;
     font-weight: 500;
@@ -63,25 +47,19 @@ h3.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
     background-color: #000;
     border-radius: 25px;
-    padding: .75em;
-    /* padding-left: 1em;
-    padding-right: 1em; */
-    /* margin: .5em; */
+    padding: .4em;
+    padding-left: 1em;
+    padding-right: 1em;
+     margin: .5em;
     color: #fff;
+    text-decoration: none;
 }
 
 .hire {
     text-align: center;
     margin: 1em auto 3em auto;
-    text-decoration: none;
-}
-
-.scroll {
-    text-align: center;
-    margin: 0 auto;
     text-decoration: none;
 }
 
@@ -95,29 +73,53 @@ blockquote {
     color: #444;
 }
 
+img {
+    display: none;
+}
+
 
 @media (min-width: 480px) {
+
+    .flex-item {
+        padding: .5em;
+        margin-right: 1em;
+        margin-bottom: 0;
+      }
+
+    .flex-container-blurb {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+
+    img {
+        display: flex;
+        width: 430px;
+        height: 430px;
+        margin-right: auto;
+    }
+
+    blockquote {
+        margin: 0px;
+        width: 70%;
+    }
+
     .btn {
         width: 100px;
         text-align: center;
         margin: 0 auto;
     }
-    
+
     .flex-container {
         display: flex;
-        padding-left: 1em;
+        padding-left: auto;
         justify-content: space-between;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         margin-right: .5em;
-    }
-
-    img {
-        display: none;
-    }
-
-    blockquote {
-        margin: 0px;
     }
 
 
